@@ -1,33 +1,42 @@
 * {
-    margin:0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+main {
+    margin: auto;
+    padding: 0 1rem;
+}
+
 body {
     background-color: #FAECD6;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 div {
+    /* for all divs? */
     background-color: #F2DEBA;
     text-align: center;
 }
 
 .mainpic {
-    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
-.amsterdaminfo {
+h1 {
+    /*website name .amsterdaminfo is H1 style for all pages, since there is only one h1 on each page and they are all the same, use h1 as a selector*/
     text-align: center;
     background-color: #41644A;
     padding-bottom: 2%;
     padding-top: 2%;
     border: 10px #0000;
-    
 }
 
 .titleonpage {
-    background-color:rgb(218, 136, 30);
+    /*h2*/
+    background-color: rgb(218, 136, 30);
     margin: 3px;
     padding: 10px;
     text-align: center;
@@ -40,25 +49,28 @@ div {
 }
 
 ul {
-    list-style-type: none;
+    /*selects all ul, list-style moved to nav ul*/
+    /*
     margin:0;
-    padding:0;
+    padding:0;*/
 }
 
+/*NAVIGATION*/
 nav {
     background-color: #9e5434;
     height: 50px;
 }
 
 nav ul {
-    display:flex;
+    /*decendant selector*/
+    display: flex;
     justify-content: center;
     align-items: center;
-    height:100%;
-    
-
+    height: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
-
 
 nav ul li {
     margin: 0 10px;
@@ -66,18 +78,18 @@ nav ul li {
 
 nav ul li a {
     color: #fff;
-    text-decoration:none;
-    padding:0.75em 1em;
-    font-weight:bold;
+    text-decoration: none;
+    padding: 0.75em 1em;
+    font-weight: bold;
     display: block;
 
 }
-
 
 nav a:hover {
     background-color: #e26c39;
 }
 
+<<<<<<< HEAD
 .selected {
     color: #fff;
     text-decoration:none;
@@ -90,10 +102,16 @@ nav a:hover {
 .selected:hover {
     background-color:#e26c39;
 
+=======
+nav a.active {
+    background-color: #1b0a02;
+    color: #e49979
+>>>>>>> a9b7ecd38196c18d16f0e7404e88d28ff7f833d7
 }
 
 
 aside {
+<<<<<<< HEAD
    width: 30%;
    padding-left: 15px;
    margin-left: 15px;
@@ -105,6 +123,19 @@ aside {
 }
 
 
+=======
+    margin-left: 20px;
+    width: 300px;
+    height: 100%;
+}
+
+aside h2,
+aside p {
+    margin-bottom: 10px;
+    font-size: 1em;
+    text-align: center;
+}
+>>>>>>> a9b7ecd38196c18d16f0e7404e88d28ff7f833d7
 
 /*.imgcontainer1 {
     display: flex;
@@ -124,6 +155,7 @@ aside {
 }
 */
 
+<<<<<<< HEAD
 .imgcontainer1 .imgconatiner2 {
     display: flex;
     grid-template-columns: 1fr 1fr;
@@ -216,4 +248,24 @@ textarea {
 
 .contact-us-img {
     float: right;
+=======
+.grid-container {
+    padding: 10px 0;
+    background-color: #2196F3;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: .5em;
+    row-gap: .5em;
+    /* align-items: center; */
+}
+
+.grid-item1 .grid-item2 {}
+
+.grid-item3 .grid-item4 {}
+
+.grid-item5 {
+    grid-row-start: 1;
+    grid-column-start: 3;
+    grid-row-end: 3;
+>>>>>>> a9b7ecd38196c18d16f0e7404e88d28ff7f833d7
 }

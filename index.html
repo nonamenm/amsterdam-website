@@ -1,34 +1,47 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>AmsterdamInfo</title>
-        <html lang="en">
-        <link rel="stylesheet" href="/STYLE/styles.css" >
-        <meta name="viewport" content="width=device-width" initial-scale="1.0"> 
-    </head>
-    <body>
+<html lang="en"><!--this goes outside the head-->
 
-        <header>
-        <h1 class="amsterdaminfo">AmsterdamInfo.</h1>
-      
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmsterdamInfo</title>
+
+    <link rel="stylesheet" href="/STYLE/styles.css">
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+</head>
+
+<body>
+
+    <header>
+        <h1 class="amsterdaminfo">AmsterdamInfo.</h1><!--h1 used as selector, class not needed-->
+
         <nav class="navbar">
             <ul>
                 <li class="selected">Home</li>
                 <li><a href="/PAGES/to-do.html">To Do</a></li>
-                <li><a href="/PAGES/accomodation.html">Accommodation</a></li>
+                <li><a href="/PAGES/accommodation.html">Accommodation</a></li>
                 <li><a href="/PAGES/gallery.html">Gallery</a></li>
                 <li><a href="/PAGES/contact-us.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
-        
-        <main>
-            <h2 class="titleonpage">Home</h2>
-        <div class="mainpic"> 
-            <img src="IMAGES/amsterdam.jpg" alt="beautiful scenery of amsterdam" height="300">
+
+    <main>
+        <h2 class="titleonpage">Home</h2>
+        <div class="mainpic">
+            <img src="IMAGES/amsterdam.jpg" alt="beautiful scenery of amsterdam" height="300px">
         </div>
+        <!--present: one article with heading and aside, two divs with two images in each
+             - flex organises either rows or columns
+             - <article> is for complete and independent content(usually in the main page),
+             - <aside> is for content relating to the main page.
+            1. remove <article>, move <aside> content below image divs.
+            2. design guide represents more than one row/column, so a grid would work best - the aside spans two rows.
+            3. wrap content in grid container.
 
 
+<<<<<<< HEAD
             <div class="imgcontainer1">
                 <img src="/IMAGES/block1.png" alt="green block" height="200" width="200" class="img1" >
                 <img src="/IMAGES/block2.webp" alt="green block" height="200" width="200" class="img2" >
@@ -48,8 +61,46 @@
                 </article>
         </article>
         
+=======
+            -->
+        <div class="grid-container">
+            <!--start of grid container-->
+            <!--https://www.w3schools.com/css/css_grid_container.asp-->
+
+            <div class="grid-item1">
+                <img src="/IMAGES/block1.png" alt="green block" height="200" width="200" class="img1">
+            </div>
+            <div class="grid-item2">
+                <img src="/IMAGES/block2.webp" alt="green block" height="200" width="200" class="img2">
+            </div>
+            <div class="grid-item3">
+                <img src="/IMAGES/block 3.webp" alt="green block" height="200" width="200" class="img3">
+            </div>
+            <div class="grid-item4">
+                <img src="/IMAGES/block 4.webp" alt="green block" height="200" width="200" class="img4">
+            </div>
+            <div class="grid-item5">
+                <aside class="why">
+                    <h2>Why AmsterdamInfo?</h2>
+                    <p>AmsterdamInfo is the ultimate online destination for all your tourist needs in Amsterdam. With a
+                        wealth of comprehensive and up-to-date information, AmsterdamInfo serves as your trusted guide
+                        to explore and experience the best of Amsterdam. Our website offers a plethora of helpful
+                        resources, including accommodation resources, activities, must-visit attractions and a trip
+                        plan, to help you make the most of your trip to this beautiful city. We provide you with the
+                        knowledge and insights you need to plan a memorable trip. Our user-friendly interface and
+                        intuitive navigation make it easy to find the information you're looking for, whether you're
+                        interested in finding accomodation, activities, or just planning your trip in general. We take
+                        pride in our accurate and reliable content, curated by a team of local experts passionate about
+                        showcasing the best of Amsterdam. With AmsterdamInfo as your go-to tourist website, you can
+                        trust that you're getting the most relevant and up-to-date information to enhance your travel
+                        experience in Amsterdam.</p>
+                </aside>
+            </div>
+        </div><!--end of grid container-->
+>>>>>>> a9b7ecd38196c18d16f0e7404e88d28ff7f833d7
     </main>
 
-        
-    </body>
+
+</body>
+
 </html>
