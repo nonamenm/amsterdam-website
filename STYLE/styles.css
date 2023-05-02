@@ -35,6 +35,8 @@ div {
     margin-left: 125px;
     margin-right: 125px;
     border-radius: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 ul {
@@ -76,26 +78,33 @@ nav a:hover {
     background-color: #e26c39;
 }
 
-nav a.active {
-    background-color:#1b0a02 ;
-    color:#e49979
+.selected {
+    color: #fff;
+    text-decoration:none;
+    padding:0.75em 1em;
+    font-weight:bold;
+    display: block;
+    background-color:#773f27;
+}
+
+.selected:hover {
+    background-color:#e26c39;
+
 }
 
 
 aside {
-    position: fixed;
-    margin-left:20;
-    right: 0;
-    width: 300px;
-    height: 100%;
+   width: 30%;
+   padding-left: 15px;
+   margin-left: 15px;
+   float: right;
+   background-color: #41644A;
+   text-align: center; 
+   font-style: italic;
 
 }
 
-aside h2, aside p {
-    margin-bottom: 10px;
-    font-size: 1em;
-    text-align: center;
-}
+
 
 /*.imgcontainer1 {
     display: flex;
@@ -116,10 +125,95 @@ aside h2, aside p {
 */
 
 .imgcontainer1 .imgconatiner2 {
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr 1fr;
     column-gap: 2em;
     align-items: left;
 
 }
 
+.todotitle {
+    margin-top: 1em;
+    font-size: 2em;
+    
+}
+
+
+.TODO {
+    text-align: center;
+    font-style: italic;
+    margin: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 10px;
+}
+
+.img1 .img2 .img3 .img4 {
+    padding: 50px;
+}
+
+.todoparagraph img {
+    border-radius: 15px;
+}
+
+.todoparagraph {
+   
+    border-radius: 20px;
+    margin: 20px;
+}
+
+label, input, textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form {
+    width:30em; 
+}
+
+.form-control {
+    margin-bottom: 1em;
+    font-style: italic;
+    
+}
+
+/*Entend starting height*/
+textarea {
+    min-height: 10em;
+
+}
+
+.form-control input, .form-control textarea {
+    padding: 0.5em;
+}
+
+.contact-us-form {
+    margin-left: 3em;
+    padding: 1em;
+    
+}
+
+.contact-us-form img {
+    float: right;
+    position:relative;
+}
+
+.email {
+    border-radius: 20px;;
+
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-bottom: 1.5em;
+    font-size: 0.75em;
+}
+
+.getintouch {
+    text-align: center;
+    background-color: rgb(244, 220, 36);
+    font-size: 15px;
+}
+
+.contact-us-img {
+    float: right;
+}
